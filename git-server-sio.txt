@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd /var/www/html/myride || exit
+git pull origin main
+npm install
+ng build
+sudo rm -rf /var/www/html/myride/*
+sudo cp -r dist/my-ride-front/browser/* /var/www/html/myride/
+echo "✅ Déploiement terminé avec succès."
+
+
+!!!!!!!!!!!!!!!!!pour l'executer!!!!!!!!!!!!!!!!!!!!!!!!!
+./deploy-myride.sh

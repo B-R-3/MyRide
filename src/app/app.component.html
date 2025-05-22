@@ -1,8 +1,6 @@
 <app-header></app-header>
 
-<main class="main-container">
-  <router-outlet></router-outlet>
-</main>
+<!-- Navigation principale -->
 <nav class="navbar">
   <div class="logo">MyRide</div>
   <div class="nav-links">
@@ -10,25 +8,42 @@
     <a routerLink="/register">Inscription</a>
   </div>
 </nav>
-<header class="hero">
-  <h1>Bienvenue sur <span class="highlight">MyRide</span></h1>
-  <p>Votre catalogue moto personnel. Découvrez, explorez et gérez vos motos favorites simplement.</p>
-  <button routerLink="/login" class="btn-primary">Commencer</button>
-</header>
-<section class="features">
-  <div class="feature-card">
-    <h2>Découvrez</h2>
-    <p>Parcourez notre collection unique de motos.</p>
-  </div>
-  <div class="feature-card">
-    <h2>Gérez</h2>
-    <p>Créez votre catalogue personnalisé.</p>
-  </div>
-  <div class="feature-card">
-    <h2>Partagez</h2>
-    <p>Montrez vos découvertes à votre communauté.</p>
-  </div>
-</section>
+
+<!-- Contenu principal -->
+<main class="main-content">
+  <!-- Section Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenue sur <span class="highlight">MyRide</span></h1>
+      <p>Votre catalogue moto personnel. Découvrez, explorez et gérez vos motos favorites simplement.</p>
+      <button routerLink="/login" class="btn-primary">Commencer</button>
+    </div>
+  </section>
+
+  <!-- Section Fonctionnalités -->
+  <section class="features">
+    <div class="feature-card">
+      <i class="feature-icon">🔍</i>
+      <h2>Découvrez</h2>
+      <p>Parcourez notre collection unique de motos.</p>
+    </div>
+    <div class="feature-card">
+      <i class="feature-icon">📋</i>
+      <h2>Gérez</h2>
+      <p>Créez votre catalogue personnalisé.</p>
+    </div>
+    <div class="feature-card">
+      <i class="feature-icon">🤝</i>
+      <h2>Partagez</h2>
+      <p>Montrez vos découvertes à votre communauté.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
 <footer class="footer">
   <p>&copy; 2025 MyRide. Tous droits réservés.</p>
 </footer>
+
+<!-- Router outlet pour les autres pages -->
+<router-outlet></router-outlet>
