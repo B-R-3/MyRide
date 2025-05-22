@@ -1,0 +1,12 @@
+<div class="moto-grid">
+  <div class="moto-card" *ngFor="let moto of motos">
+    <img [src]="moto.image_url" alt="Moto">
+    <div class="info">
+      <h3>{{ moto.marque }} {{ moto.modele }}</h3>
+      <p>Cylindrée : {{ moto.cylindree }}cc</p>
+      <p>Année : {{ moto.annee }}</p>
+      <p>Type : {{ moto.type }}</p>
+      <p>Prix : {{ moto.prix }} €</p>
+    </div>
+  </div>
+</div>
